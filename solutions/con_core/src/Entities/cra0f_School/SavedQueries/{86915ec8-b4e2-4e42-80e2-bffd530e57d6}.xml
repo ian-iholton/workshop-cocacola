@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{86915ec8-b4e2-4e42-80e2-bffd530e57d6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cra0f_name" select="1" icon="1" preview="1">
+        <row name="result" id="cra0f_schoolid">
+          <cell name="cra0f_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cra0f_school">
+          <attribute name="cra0f_schoolid" />
+          <attribute name="cra0f_name" />
+          <attribute name="createdon" />
+          <order attribute="cra0f_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Schools" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
